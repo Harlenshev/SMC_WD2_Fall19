@@ -1,13 +1,25 @@
 body{
     margin: 0px;
 }
+
+header input#toggler {
+
+       display: none; 
+    
+
+
+}
 nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(255, 255, 255);
     padding: 20px 10px;
+    display: none;
 
 }
+input#toggler:checked + nav{
 
+    display: block;
+}
 nav ul {
     list-style:none ;
     padding-left: 0px;
