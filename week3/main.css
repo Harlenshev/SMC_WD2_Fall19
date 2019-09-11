@@ -1,14 +1,22 @@
+@import url(colors.css);
 body{
     margin: 0px;
 }
 
+header {
+    background-color: none;
+}
 header input#toggler {
 
        display: none; 
-    
-
-
 }
+    
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
 nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(255, 255, 255);
@@ -43,6 +51,46 @@ nav ul a {
 
 }
 
+/*lg screen*/
+ @media (min-width: 800px) {
+     .width-lg-l25{
+          width: 25%;
+     }
+     .width-lg-50{
+         width: 50%;
+     }
+      .width-md-33{
+          width: 33%;
+      }
+       .width-lg-l00 {
+          width: 100%;
+      }
+}
+
+
+
+/*Main*/
+.width-md-50{
+     width: 50%;
+}
+.width-md-33 {
+    width: 33%;
+}
+.floater-section {
+    float: left;
+    min-height:  300px;
+    width: 100%;
+}
+  .container::after{
+      clear: both;
+      content: "";
+      display: block;
+  }
+ .clearfix {
+     clear: both;
+ }
+
+ 
 @media(min-width:540px){
     nav ul li {
         display: inline-block;
@@ -58,44 +106,78 @@ nav ul a {
     nav{
         padding:0px 10px;
 
-      
     }
     h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none ;
         color: #ffffff;
         text-transform:none;
-    
-    
-}
-h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none ;
-    color: #ffffff;
-    text-transform:none;
+    }
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
 
 
-}
-p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none ;
-    color: #ffffff;
-    text-transform:none;
+    }
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
 
 
-}
-h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none ;
-    color: #ffffff;
-    text-transform:none;
+    }
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
 
 
- }
- h {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none ;
-    color: #ffffff;
-    text-transform:none;
-}
-}
+    }
+    h {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
+    }
+
+    }
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
+    }
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
+
+
+    }
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
+
+
+    }
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
+
+
+    }
+    h {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none ;
+        color: #ffffff;
+        text-transform:none;
+    }
