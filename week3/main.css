@@ -1,43 +1,42 @@
-@import url(colors.css);
-body{
+@import url("colors.css");
+
+body {
     margin: 0px;
 }
 
 header {
-    background-color: none;
+    background-color: lightcyan;
 }
-header input#toggler {
 
-       display: none; 
+header input#toggler {
+    display: none;
 }
-    
+
 header label img {
     width: 40px;
     height: auto;
     margin: 10px;
 }
 
-nav{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+nav {
     padding: 20px 10px;
     display: none;
-
 }
-input#toggler:checked + nav{
 
+input#toggler:checked + nav{
     display: block;
 }
+
 nav ul {
-    list-style:none ;
+    list-style: none;
     padding-left: 0px;
     margin: 0px;
 }
 
 nav li {
-    border-bottom: 5px solid #0080ff;
-    padding: 5px 5px;
-    margin: 16px;
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
 }
 
 nav li:first-child {
@@ -45,56 +44,30 @@ nav li:first-child {
 }
 
 nav ul a {
-    text-decoration: none ;
-    color: #ff0000;
-    text-transform:none;
-
-}
-
-/*lg screen*/
- @media (min-width: 800px) {
-     .width-lg-l25{
-          width: 25%;
-     }
-     .width-lg-50{
-         width: 50%;
-     }
-      .width-md-33{
-          width: 33%;
-      }
-       .width-lg-l00 {
-          width: 100%;
-      }
+    text-decoration: none;
+    color: #212529;
+    text-transform: uppercase;
 }
 
 
+/*---------------- MAIN -------------------*/
 
-/*Main*/
-.width-md-50{
-     width: 50%;
-}
-.width-md-33 {
-    width: 33%;
-}
 .floater-section {
     float: left;
-    min-height:  300px;
+    min-height: 300px;
     width: 100%;
 }
-  .container::after{
-      clear: both;
-      content: "";
-      display: block;
-  }
- .clearfix {
-     clear: both;
- }
 
- 
-@media(min-width:540px){
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+@media(min-width: 540px){
     nav ul li {
         display: inline-block;
-        padding-bottom:5px;
+        padding-bottom: 5px;
         border-bottom: 0px;
         margin: 10px 20px;
     }
@@ -103,81 +76,35 @@ nav ul a {
         text-align: center;
     }
 
-    nav{
-        padding:0px 10px;
-
-    }
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
-    }
-    h2 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
-
-
-    }
-    p {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
-
-
-    }
-    h2 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
-
-
-    }
-    h {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
+    nav {
+        padding: 0px 10px;
     }
 
-    }
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
-    }
-    h2 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
+    /* MAIN */
 
-
+    .width-md-50 {
+        width: 50%;
     }
-    p {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
 
-
+    .width-md-33 {
+        width: 33%;
     }
-    h2 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
+} /*end of 540px breakpoint*/
 
+@media (min-width: 800px){
+    .width-lg-25 {
+        width: 25%;
+    }
 
+    .width-lg-33 {
+        width: 33.33333%;
     }
-    h {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none ;
-        color: #ffffff;
-        text-transform:none;
+
+    .width-lg-50 {
+        width: 50%;
     }
+
+    .width-lg-100 {
+        width: 100%;
+    }
+}
