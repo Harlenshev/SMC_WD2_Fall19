@@ -52,6 +52,10 @@ nav ul a {
 
 /*---------------- MAIN -------------------*/
 
+img {
+    max-width: 100%;
+}
+
 .floater-section {
     float: left;
     min-height: 300px;
