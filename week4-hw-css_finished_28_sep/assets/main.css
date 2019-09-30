@@ -1,0 +1,177 @@
+@import "colors.css";  
+@import url(layout.css);
+
+
+body {
+ 
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+header input#toggler {
+    display: none;
+}
+h1 {
+    vertical-align: middle;
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+nav {
+    padding: 20px 10px;
+    display: none;
+}
+
+input#toggler:checked + nav{
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/*---------------- Center CSS for All Pages-------------------*/
+
+/* css for body covers background color and font size */ 
+body {
+  background: #f06d06;
+  font-size: 80%;
+  padding: 20px;
+}
+
+/* css for main*/ 
+main {
+  position: relative;
+  background: white;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  height: 600px;
+}
+
+/* css for floater section having image and text */ 
+main .floater-section-container {
+    height: 88%;
+    width: 90%;
+    right: 1%;
+    top: 6%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+main .floater-section {
+    background: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    height: 100%;
+    overflow: auto;
+    right: 0;
+    bottom: 0;
+}
+
+/* css for h1 and h2 heading tags */
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+/* media query work on desktop */ 
+
+@media only screen and (min-width: 1280px) {
+	/* hide header label */
+	header label {
+		display: none;
+	}
+	
+	/* header and header background changed on desktop */
+	header {
+		background-color: #000 !important;
+		float: left;
+		margin-bottom: 10px;
+		width:100%;
+	}
+
+	/* desktop navigation  menus css starts */
+	nav {
+	  border-right: none;
+	  width: 100%;
+	}
+
+	nav ul {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	nav ul li {
+	  list-style: none;
+	  text-align: center;
+	  padding: 0px !important;
+	  margin: 0px!important;
+	  border-bottom: none !important;
+	}
+
+
+	nav ul li a {
+	  display: block;
+	  text-decoration: none;
+	  color: #fff;
+	  font-weight: 700;
+	}
+
+	nav {
+	  display: table;
+	  table-layout: fixed;
+	}
+
+	ul {
+	  display: table-row;
+	}
+
+	ul li {
+	  display: table-cell;
+	}
+	/* desktop navigation  menus css ends */
+
+}
+
+/* media query work on mobile view */ 
+@media only screen and (max-width: 720px)
+{
+	/* main css fixed for mobile view to max 300px */
+	main{
+		max-height: 300px;
+	}
+}
