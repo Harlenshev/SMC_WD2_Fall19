@@ -1,0 +1,159 @@
+@import "colors.css";  
+@import url(layout.css);
+
+
+body {
+ 
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+header input#toggler {
+    display: none;
+}
+h1 {
+    vertical-align: middle;
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+nav {
+    padding: 20px 10px;
+    display: none;
+}
+
+input#toggler:checked + nav{
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/*---------------- Center CSS for All Pages-------------------*/
+
+/* css for body covers background color and font size */ 
+body {
+  background: #000000;
+  font-size: 80%;
+  padding: 20px;
+}
+
+/* css for main*/ 
+main {
+  position: relative;
+  background: white;
+  height: 590px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+/* css for floater section having image and text */ 
+main .floater-section {
+  background: black;
+  color: white;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+/* css for h1 and h2 heading tags */
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (min-width: 1280px) {
+	/* hide header label */
+	header label {
+		display: none;
+	}
+	
+	header {
+		background-color: #000 !important;
+		float: left;
+		margin-bottom: 10px;
+	}
+	
+	nav li {
+    float: left;
+    max-width: 100%;
+	margin: 0px !important;
+	padding: 0px !important;
+	width:415px;
+	border-bottom: none !important;
+	}
+	
+	/* Add a black background color to the top navigation */
+	nav {
+	  overflow: hidden;
+	  display: block;
+	  float: left;
+	  width: 100%;
+	  padding: 0px !important;
+	}
+
+	/* Style the links inside the navigation bar */
+	nav a {
+	  float: left;
+	  display: block;
+	  color: #fff !important;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  font-weight: 700;
+	  text-align: center;
+	  width: 100%;
+	}
+
+	/* Hide the link that should open and close the topnav on small screens */
+	nav .icon {
+	  display: none;
+	}
+	
+	/* Change the color of links on hover */
+	nav a:hover {
+	  background-color: #ddd;
+	  color: #fff;
+	}
+	nav li:first-child {
+		margin-left: 10px !important;
+	}
+}

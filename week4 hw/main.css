@@ -15,6 +15,9 @@ header {
 header input#toggler {
     display: none;
 }
+h1 {
+    vertical-align: middle;
+}
 
 header label img {
     width: 40px;
@@ -56,6 +59,10 @@ nav ul a {
 
 
 /*---------------- MAIN -------------------*/
+.bottom  {
+    vertical-align: super;
+   
+}
 
 img {
     max-width: 100%;
