@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 header input#toggler {
@@ -72,7 +72,7 @@ nav ul {
 }
 
 nav li {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff00;
     padding: 10px 0px;
     margin: 10px;
 }
@@ -93,18 +93,18 @@ nav ul a {
 
 /* css for body covers background color and font size */ 
 body {
-  background: #ffffff;
+  background: #ffffff00;
   font-size: 80%;
   padding: 20px;
-  line-height: 20px;
-  background-image: url("../images/ripples.png");
+  line-height: 25px;
+  background-image: url("../images/bluapfbackground.png");
 background-repeat: repeat;
 }
 
 /* css for main*/ 
 main {
   /*position: relative;*/
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0);
   width: 60%;
   margin: 0 auto;
   padding: 20px;
