@@ -10,7 +10,8 @@ max-width: 100px;
 }
 
 .content-image {
-    max-width: 100px;
+   /* max-width: 100px;*/
+   margin-bottom: 60px;
 }
 
 body {
@@ -30,6 +31,13 @@ header input#toggler {
 }
 h1 {
     vertical-align: middle;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header label {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
 }
 
 header label img {
@@ -45,6 +53,13 @@ header label img {
 float: left;
     }
     
+    .content p {
+        font-size: 1.25em;
+    }
+
+    input#toggler:checked + nav{
+        position: static !important;
+    }
     
     header nav {
         display: block;
@@ -63,6 +78,7 @@ nav {
 input#toggler:checked + nav{
     display: block;
     position: absolute;
+    top: 80px;
 }
 
 nav ul {
@@ -88,7 +104,9 @@ nav ul a {
     text-transform: uppercase;
 }
 
-
+.content-image img {
+    height: 100px;
+}
 /*---------------- Center CSS for All Pages-------------------*/
 
 /* css for body covers background color and font size */ 
@@ -96,7 +114,7 @@ body {
   background: #ffffff00;
   font-size: 80%;
   padding: 20px;
-  line-height: 25px;
+  line-height: 29px;
   background-image: url("../images/apfwater1.png");
 background-repeat: repeat;
 }
@@ -138,6 +156,7 @@ main .floater-section {
 
 /* css for h1 and h2 heading tags */
 h1, h2 {
+    margin-bottom: 60px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
