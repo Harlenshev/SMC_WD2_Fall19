@@ -21,7 +21,7 @@ body {
  
     margin: 0px;
     
-    font-family: Haettenschweiler, 'Arial Narrow', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
    
 }
 
@@ -161,7 +161,8 @@ main .floater-section {
 h1, h2 {
     margin-bottom: 60px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.808);
+    text-shadow: 1px 0px 1px #00c3ff
 }
 
 /* media query work on mobile view */ 
