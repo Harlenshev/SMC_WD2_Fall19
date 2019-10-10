@@ -20,6 +20,14 @@ img {
 
 /* MEDIUM SIZE SCREENS */
 @media(min-width: 540px){
+    .logo {
+       text-align: center;
+    }
+
+    .textlogo {
+        display: inline;
+        text-align: center;
+    }
     .width-md-25 {
         width: 25%;
     }
@@ -47,6 +55,11 @@ img {
 
 /* LARGE SCREENS */
 @media (min-width: 800px){
+   
+   .textlogo {
+       display: none;
+   }
+
     .width-lg-25 {
         width: 25%;
     }
