@@ -136,7 +136,7 @@ nav ul a {
 /* css for body covers background color and font size */ 
 body {
   /*background: #019722c0;*/
-  background: rgba(0, 128, 0, 0.521) ;
+  background: repeating-linear-gradient(to right, #01972296 0,  #01972285 50px,  rgba(0, 128, 0, 0.411) 50px);
   font-size: 90%;
   padding: 20px;
   line-height: 35px;

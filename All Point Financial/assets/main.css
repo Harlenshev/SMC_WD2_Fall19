@@ -1,6 +1,6 @@
 @import "colors.css";  
 @import url(layout.css);
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
 .logo img{
 max-width: 100px;
@@ -32,7 +32,7 @@ body {
  
     margin: 0px;
     
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 
 
    
@@ -47,7 +47,8 @@ header input#toggler {
 }
 h1 {
     vertical-align: middle;
-    font-family: Helvetica, sans-serif;
+    font-family: font-family: 'IBM Plex Sans', sans-serif;
+
 }
 
 header label {
@@ -123,7 +124,7 @@ nav li:first-child {
 
 nav ul a {
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000000;
     text-transform: uppercase;
 }
@@ -136,11 +137,11 @@ nav ul a {
 /* css for body covers background color and font size */ 
 body {
   /*background: #019722c0;*/
-  background: rgba(0, 128, 0, 0.521) ;
+ /* background: repeating-linear-gradient(to right, #019722 0,  #019722 50px,  green 50px);*/
   font-size: 90%;
   padding: 20px;
   line-height: 35px;
- /*background-image: url("../images/greenapf.png");*/
+ background-image: url("../images/greenapf.png");
 background-repeat: repeat;
 }
 
