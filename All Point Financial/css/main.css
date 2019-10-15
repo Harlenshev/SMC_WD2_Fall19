@@ -9,11 +9,26 @@ max-width: 100px;
     margin: 0px auto; 
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px
+    font-size: 20px;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+ animation: shadowanimation 10s infinite;
   
 }
+@keyframes shadowanimation{
+    50%{
+        text-shadow: 0 0 5px rgb(76, 0, 255);
+    }
+}
 
+img[alt="menu"] {
+    background-color: rgba(255,255,255,0);
+    transition: background-color 0.25s;
+}
+img[alt="menu"]:hover{
+    background-color: rgba(255, 255, 255, 1); 
+    border-radius: 5px;
 
+}
 
 .textlogo {
     text-align: center;
@@ -48,6 +63,7 @@ header input#toggler {
 h1 {
     vertical-align: middle;
     font-family: 'IBM Plex Sans', sans-serif;
+   
 
 }
 
@@ -121,11 +137,12 @@ nav li {
     padding: 10px;
     margin: 10px;
     text-align: center;
-  background: rgb(253, 235, 217);
+  background-color: rgb(253, 235, 217);
   border-radius: 10px;
+  transition: background-color 0.25s;
 }
 nav li:hover {
-    background: rgb(19, 139, 35);
+    background-color: rgb(19, 139, 35);
   
 }
 nav li:first-child {
