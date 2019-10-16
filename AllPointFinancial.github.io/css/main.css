@@ -1,0 +1,234 @@
+@import "colors.css";  
+@import url(layout.css);
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+.logo img{
+max-width: 100px;
+}
+.logo {
+    margin: 0px auto; 
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+ animation: shadowanimation 10s infinite;
+  
+}
+@keyframes shadowanimation{
+    50%{
+        text-shadow: 0 0 5px rgb(76, 0, 255);
+    }
+}
+
+img[alt="menu"] {
+    background-color: rgba(255,255,255,0);
+    transition: background-color 0.25s;
+}
+img[alt="menu"]:hover{
+    background-color: rgba(255, 255, 255, 1); 
+    border-radius: 5px;
+
+}
+
+.textlogo {
+    text-align: center;
+}
+
+.content{
+    text-align: left;
+}
+.content-image {
+   /* max-width: 100px;*/
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+body {
+ 
+    margin: 0px;
+    
+    font-family: 'IBM Plex Sans', sans-serif;
+
+
+   
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header input#toggler {
+    display: none;
+}
+h1 {
+    vertical-align: middle;
+    font-family: 'IBM Plex Sans', sans-serif;
+   
+
+}
+
+header label {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+@media screen and (min-width: 750px){
+    header label  {
+        display: none;
+    }
+    .logo{
+       
+        text-align: left; 
+    }
+    
+    .content p {
+        font-size: 1.25em;
+    }
+
+   
+    
+    header nav {
+        display: block;
+        text-align: center;
+        position: static !important;
+        background:  0 !important;
+    }
+    header nav li {
+        display: inline-block;
+        background: transparent;
+    }
+    .content-image img {
+        transform: scale(1.25);
+
+
+    }
+    
+}
+
+
+nav {
+    padding: 20px 10px;
+    position: absolute;
+    left: -250px;
+    top: 80px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: left 0.25s;
+}
+
+input#toggler:checked + nav{
+    left: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    border-bottom: 1px solid #ffffff00;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  background-color: rgb(253, 235, 217);
+  border-radius: 10px;
+  transition: background-color 0.25s;
+}
+nav li:hover {
+    background-color: rgb(19, 139, 35);
+  
+}
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+ 
+nav ul a:hover {
+    color: white; 
+}
+
+.content-image img {
+    height: 100px;
+}
+/*---------------- Center CSS for All Pages-------------------*/
+
+/* css for body covers background color and font size */ 
+body {
+  /*background: #019722c0;*/
+ /* background: repeating-linear-gradient(to right, #019722 0,  #019722 50px,  green 50px);*/
+  font-size: 90%;
+  padding: 20px;
+  line-height: 35px;
+ background-image: url("../images/greenapf.png");
+background-repeat: repeat;
+}
+
+/* css for main*/ 
+main {
+  /*position: relative;*/
+  background: rgba(255, 255, 255, 0);
+  /*width: 60%;*/
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  overflow: hidden;
+  /*height: 600px;*/
+}
+
+/* css for floater section having image and text */ 
+main .floater-section-container {
+    /*height: 88%;*/
+    width: 90%;
+    right: 1%;
+    /*top: 6%;
+    overflow: hidden;
+    position: relative;*/
+    margin: 0 auto;
+}
+
+main .floater-section {
+    background: rgba(0, 0, 0, 0);
+    color: black;
+    width: 100%;
+    /*position: absolute;*/
+    top: 0;
+    left: 2.5%;
+    /*height: 100%;
+    overflow: auto;*/
+    right: 0;
+    bottom: 0;
+}
+
+/* css for h1 and h2 heading tags */
+h1, h2 {
+    margin-bottom: 60px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.808);
+    text-shadow: 1px 0px 1px #ffffff79
+}
+
+/* media query work on mobile view */ 
+@media only screen and (max-width: 720px)
+{
+	/* main css fixed for mobile view to max 300px */
+	main{
+		/*max-height: 300px;*/
+	}
+}
+@media (min-width: 800px){
+    main {
+        width: 80%;
+    }
+}
