@@ -2,6 +2,41 @@
 @import url(layout.css);
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
+
+/*.bg {
+    background-image: url("../images/dog3.png");
+    opacity: .5;
+    width: 100%;
+    height: 200px;
+}*/
+
+.jumbotron {
+     height: 74vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.jumbotron h1 {
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    margin-top: -20px;
+    
+}
+
+.jumbotron p {
+          padding-bottom: 45px;
+          text-shadow: 0 0 4px rgb(255, 255, 255);
+}
+
+* {
+    text-shadow: 0 0 4px rgb(255, 255, 255);
+}
+
+h1 {
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+
 .donation-form {
     display: grid; 
     grid-template-columns: 200px 200px;
@@ -20,8 +55,10 @@
 .image-gallery{
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    grid-gap: 2px 2px
+    grid-gap: 2px 2px;
 }
+
+
 
 .logo img{
 max-width: 100px;
@@ -29,15 +66,15 @@ max-width: 100px;
 .logo {
     margin: 0px auto; 
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: inherit;
     font-size: 20px;
-    text-shadow: 0 0 5px rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(252, 144, 4);
  animation: shadowanimation 10s infinite;
   
 }
 @keyframes shadowanimation{
     50%{
-        text-shadow: 0 0 5px rgba(76, 0, 255, 0);
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0);
     }
 }
 
@@ -121,6 +158,8 @@ header label img {
         font-size: 1.25em;
     }
 
+    
+
    
     
     header nav {
@@ -167,12 +206,12 @@ nav li {
     padding: 10px;
     margin: 10px;
     text-align: center;
-  background-color: rgb(253, 235, 217);
+  background-color: rgb(173, 87, 0);
   border-radius: 10px;
   transition: background-color 0.25s;
 }
 nav li:hover {
-    background-color: rgb(19, 139, 35);
+    background-color: rgb(255, 94, 0);
   
 }
 nav li:first-child {
@@ -181,17 +220,19 @@ nav li:first-child {
 
 nav ul a {
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000000;
+    font-family:'IBM Plex Sans', sans-serif;
+    color: #ffffff;
     text-transform: uppercase;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    
 }
  
 nav ul a:hover {
-    color: white; 
+    color: rgb(0, 255, 85); 
 }
 
 .content-image img {
-    height: 100px;
+    height: 200px;
 }
 /*---------------- Center CSS for All Pages-------------------*/
 
@@ -202,8 +243,13 @@ body {
   font-size: 90%;
   padding: 20px;
   line-height: 35px;
- background-image: url("../images/greenapf.png");
-background-repeat: repeat;
+ background-image: url("../images/dog4.png"); 
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+
 }
 
 /* css for main*/ 
@@ -245,20 +291,71 @@ main .floater-section {
 h1, h2 {
     margin-bottom: 60px;
     text-align: center;
-    color: rgba(32, 31, 31, 0.808);
+    color: rgb(247, 92, 2);
     text-shadow: 1px 0px 1px #ffffff79
 }
 
 /* media query work on mobile view */ 
-@media only screen and (max-width: 720px)
+@media only screen and (max-width: 750px)
 {
 	/* main css fixed for mobile view to max 300px */
 	main{
 		/*max-height: 300px;*/
-	}
+    }
+    .jumbotron {
+
+        height: 92vh;
+    }
+
 }
 @media (min-width: 800px){
     main {
         width: 80%;
     }
 }
+
+#dog1, #dog2, #dog3, #dog4, #dog5, #dog6 {
+    background-image: url("../images/dog3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 283px;
+    /*background-size: 282px 283px;*/
+    background-size: cover;
+    background-position: center;
+   
+      }
+       #dog2 {
+        background-image: url("../images/dog4.jpg");
+        
+       }
+       
+       #dog3 {
+        background-image: url("../images/dog8.png");
+        
+       }
+
+     #dog4 {
+     background-image: url("../images/dog11.jpg");
+     
+    }
+     
+    #dog5 {
+        background-image: url("../images/dog13.jpg");
+        
+       }
+   
+   
+   
+    #dog6 {
+        background-image: url("../images/dog12.jpg");
+        
+       }
+
+
+
+      span {
+        margin: 5px;
+      }
+    
+
+

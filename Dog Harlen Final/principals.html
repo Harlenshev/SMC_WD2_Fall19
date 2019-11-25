@@ -16,7 +16,7 @@
 <header>
     <!--header starts -->
     <!---- <div class="logo"><img src="images/apf1.gif"></div>-->
-    <div class="logo">ALL POINT FINANCIAL</div>
+    <div class="logo">Forte Dog Rescue</div>
 
 
     <label for="toggler">
@@ -26,11 +26,10 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="principals.html">Principals</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="principals.html">Donate</a></li>
+                <li><a href="services.html">Blog</a></li>
 
         </ul>
     </nav>
@@ -51,14 +50,17 @@
                 <div class="donation-form">
 
                     <label for="Email">Email</label>
-                    <input type="email">
+                    <input type="email" id="email">
 
 
 
                     <label>Donation Dollar Amount</label>
-                    <input type="number">
+                    <input type="number" id="number" min="1" >
                     <div class="submit-row">
-                        <input type="button" value="Submit">
+                        <input type="button" value="Submit" onclick="popup()">
+            
+                          
+
                     </div>
 
                 </div>
@@ -75,6 +77,19 @@
         <!--Floater section container ends -->
     </main>
     <!--main ends -->
+    
+    <script>   
+       var number = document.getElementById("number");
+       var email = document.getElementById("email");
+       function popup(){ 
+           if  (number.value.length>0 && email.value.length>0)
+                alert("Thanks for the Donation!");
+            else 
+                alert("Fill in your eMail and Dollar Amount to Donate!");
+
+       }
+      </script>
+
 </body>
 
 </html>

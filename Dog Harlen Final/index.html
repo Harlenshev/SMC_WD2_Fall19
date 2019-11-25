@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-    <title>All Point Financial</title>
+    <title>Forte Dog Rescue</title>
 
 </head>
 
@@ -18,10 +18,13 @@
 
 
 <body>
+
+    <!----<div>class="bg"</div>-->
+    
     <header>
         <!--header starts -->
 
-        <div class="logo">ALL POINT FINANCIAL</div>
+        <div class="logo">Forte Dog Rescue</div>
 
 
 
@@ -32,19 +35,17 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="principals.html">Principals</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="principals.html">Donate</a></li>
+                    <li><a href="services.html">Blog</a></li>
             </ul>
         </nav>
     </header>
     <!--header ends -->
 
 
-
-
+    
     <main>
         <!--main starts -->
         <div class="container"></div>
@@ -53,32 +54,37 @@
                 <!--Floater section starts -->
                 <div class="content">
 
+       
+                    
 
+                        <div class="jumbotron">  
 
-                    <p>
+                            <h1>Saving the World one Dog at a Time </h1>
 
+                            <p>
+                    
+                    
+                                All Point Financial Services provides comprehensive services regarding the analysis and
+                                investment in RMBS, Mortgage Loans, Nonperforming and Subperforming Assets.
+                    
+                    
+                    
+                            </p>
+                        </div>
+                    
 
-                        All Point Financial Services provides comprehensive services regarding the analysis and
-                        investment in RMBS, Mortgage Loans, Nonperforming and Subperforming Assets.
+                    
 
+                    <button onclick="dogflip()">Dog Shuffle</button>
 
-
-                    </p>
-
-                    <h1>On Target </h1>
-
-
-                    <div class="image-gallery">
-                        
-                        <img src="images/dog3.png" alt="Fish">
-                        <img src="images/dog3.png" alt="Fish">
-                        <img src="images/dog3.png" alt="Fish">
-                        <img src="images/dog3.png" alt="Fish">
-                        <img src="images/dog3.png" alt="Fish">
-                        <img src="images/dog3.png" alt="Fish">
-         
-                       
-
+                   
+                    <div class="image-gallery" id="gal">
+                         <div id="dog1"><span> Max 1 years old.</span> </div>
+                         <div id="dog2"><span> Sally 2 years old.</span> </div>
+                         <div id="dog3"><span> Ben 1 years old.</span> </div>
+                         <div id="dog4"><span> Jenny 4 years old.</span> </div>
+                         <div id="dog5"><span> Stacy 2 years old.</span> </div>
+                         <div id="dog6"><span> Buddy 3 years old.</span> </div>
                     </div>
 
 
@@ -92,6 +98,26 @@
         <!--Floater section container ends -->
     </main>
     <!--main ends -->
+ <script>
+     var gray = false;
+     var gal = document.getElementById("gal");
+     function dogflip(){ 
+         dogorder();
+        /*gray = !gray;
+        if (gray==true)
+            gal.style.filter = "grayscale(100%)"; 
+        else
+            gal.style.filter = "none"; */
+     }  
+     function dogorder (){
+         var dog = gal.firstElementChild; 
+         console.log(dog);
+         //var dog = document.getElementById("mySelect");
+         dog.remove(dog.selectedIndex);
+         gal.appendChild(dog);
+     }
+ </script>
+
 </body>
 
 </html>
