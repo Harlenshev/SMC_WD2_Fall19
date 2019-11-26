@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-.container:after {
+.container: after 
     clear: both;
     content: "";
     display: block;
