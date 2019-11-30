@@ -10,6 +10,12 @@
     height: 200px;
 }*/
 
+
+
+
+
+
+
 .jumbotron {
      height: 74vh;
      display: flex;
@@ -37,7 +43,7 @@ h1 {
 }
 
 
-.donation-form {
+.donation-form .page{
     display: grid; 
     grid-template-columns: 200px 200px;
     grid-gap: 17px 17px;
@@ -45,6 +51,14 @@ h1 {
     margin: auto;
     font-size: 17px;
     padding-top: 49px;
+}
+
+.donation-form .page {
+    display: none;
+}
+
+.donation-form .visible-page {
+    display: grid;
 }
 
 .submit-row {
@@ -68,7 +82,7 @@ max-width: 100px;
     text-align: center;
     font-family: inherit;
     font-size: 20px;
-    text-shadow: 0 0 5px rgb(252, 144, 4);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.404);
  animation: shadowanimation 10s infinite;
   
 }
@@ -211,7 +225,7 @@ nav li {
   transition: background-color 0.25s;
 }
 nav li:hover {
-    background-color: rgb(255, 94, 0);
+    background-color: rgb(116, 85, 46);
   
 }
 nav li:first-child {
@@ -221,14 +235,14 @@ nav li:first-child {
 nav ul a {
     text-decoration: none;
     font-family:'IBM Plex Sans', sans-serif;
-    color: #ffffff;
+    color: #505050;
     text-transform: uppercase;
-    text-shadow: 0 0 3px rgb(0, 0, 0);
+    text-shadow: 0 0 3px rgb(255, 255, 255);
     
 }
  
 nav ul a:hover {
-    color: rgb(0, 255, 85); 
+    color: rgb(255, 255, 255); 
 }
 
 .content-image img {
@@ -291,8 +305,8 @@ main .floater-section {
 h1, h2 {
     margin-bottom: 60px;
     text-align: center;
-    color: rgb(247, 92, 2);
-    text-shadow: 1px 0px 1px #ffffff79
+    color: rgb(226, 159, 81);
+    text-shadow: 1px 0px 1px #97979779
 }
 
 /* media query work on mobile view */ 

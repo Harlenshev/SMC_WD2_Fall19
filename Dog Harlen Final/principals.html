@@ -48,20 +48,45 @@
 
                 <h1>Donate</h1>
                 <div class="donation-form">
+                <div class="page visible-page">
 
                     <label for="Email">Email</label>
                     <input type="email" id="email">
+
+                    <label for="Name">Name</label>
+                    <input type="Name" id="Name">
+                    
+
+                    <label for="Address">Address</label>
+                    <input type="Address" id="Address">
+                <div class="submit-row">
+                    <input type="button" value="Next" onclick = "nextPage()">
+
+                     </div>
+                </div>
+                
+                
+
+                      
+
+                    <div class="page">
+                    <label for="Credit Card Number">Credit Card Number</label>
+                    <input type="Credit Card Number" id="Credit Card Number">
 
 
 
                     <label>Donation Dollar Amount</label>
                     <input type="number" id="number" min="1" >
                     <div class="submit-row">
-                        <input type="button" value="Submit" onclick="popup()">
-            
-                          
-
-                    </div>
+                            <input type="button" value="Submit" onclick="popup()">
+                            <input type="button" value="Back" onclick = "previousPage()">
+                            
+                              
+    
+                        </div>
+                </div>
+                    
+                
 
                 </div>
 
@@ -81,13 +106,31 @@
     <script>   
        var number = document.getElementById("number");
        var email = document.getElementById("email");
+       var page1 = document.getElementsByClassName("page")[0];
+       var page2 = document.getElementsByClassName("page")[1];
+
+         function nextPage(){
+            page1.classList.remove("visible-page")
+            page2.classList.add("visible-page")
+
+         }
+
+         function previousPage(){
+            page2.classList.remove("visible-page")
+            page1.classList.add("visible-page")
+
+         }
+
        function popup(){ 
            if  (number.value.length>0 && email.value.length>0)
                 alert("Thanks for the Donation!");
             else 
-                alert("Fill in your eMail and Dollar Amount to Donate!");
+                alert("Fill to Donate!");
 
        }
+
+
+
       </script>
 
 </body>
