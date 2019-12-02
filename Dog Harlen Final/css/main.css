@@ -24,7 +24,7 @@
 }
 
 .jumbotron h1 {
-    text-shadow: 0 0 3px rgb(0, 0, 0);
+    text-shadow: 0 0 3px rgb(255, 255, 255);
     margin-top: -20px;
     
 }
@@ -235,9 +235,9 @@ nav li:first-child {
 nav ul a {
     text-decoration: none;
     font-family:'IBM Plex Sans', sans-serif;
-    color: #505050;
+    color: #000000;
     text-transform: uppercase;
-    text-shadow: 0 0 3px rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0);
     
 }
  
@@ -306,7 +306,7 @@ h1, h2 {
     margin-bottom: 60px;
     text-align: center;
     color: rgb(226, 159, 81);
-    text-shadow: 1px 0px 1px #97979779
+    text-shadow: 1px 0px 1px #ffffff
 }
 
 /* media query work on mobile view */ 
