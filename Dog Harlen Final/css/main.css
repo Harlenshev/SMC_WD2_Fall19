@@ -318,7 +318,7 @@ main .floater-section {
     width: 100%;
     /*position: absolute;*/
     top: 0;
-    left: 2.5%;
+    left: 0%;
     /*height: 100%;
     overflow: auto;*/
     right: 0;
@@ -393,6 +393,66 @@ h1, h2 {
 
       span {
         margin: 5px;
+      }
+
+      @media only screen and  (min-width: 750px) and (max-width:980px){
+            #h1frontpage {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+      }
+     
+     
+      /* Iphone screen */
+      @media only screen and  (max-width: 400px){
+          
+        .content-image {
+            
+            margin-bottom: 0px; 
+        }
+       
+        .content-image img {
+            height: 300px;
+        }
+
+
+        .content {
+             
+            padding-left: 0;
+            padding-right: 0;
+
+        }
+       
+       
+        .jumbotron  {
+        width: 100%;
+        
+        margin-top: 100px;
+        /*width: 95vw;
+        margin-left: 2.5vw;*/
+
+        
+    } 
+
+    
+    main .floater-section {
+        
+        position: absolute;
+         left: 0px;
+        
+    }
+
+    #h1frontpage, div.content h1 {
+           margin-bottom: 0;
+    }
+    h1 {
+        margin-top: 60px;
+    }
+    #fronttext {
+        line-height: 25px;
+    }
+
+
       }
     
 
