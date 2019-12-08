@@ -342,7 +342,7 @@ h1, h2 {
     }
     .jumbotron {
 
-        height: 92vh;
+        /*height: 92vh;*/
     }
 
 }
@@ -405,7 +405,41 @@ h1, h2 {
      
       /* Iphone screen */
       @media only screen and  (max-width: 400px){
+         
+        #fronttext {
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 5px; 
+            box-sizing: border-box;
+        }
+
+        .donation-form .page{
+            display: grid; 
+            grid-template-columns: 140px 170px;
+            grid-gap: 27px 39px;
+            width: 437px;
+            margin: auto;
+            font-size: 17px;
+            padding-top: 49px;
+        }
+
+            .donation-form .page {
+                display: none;
+            }
+            
+            .donation-form .visible-page {
+                display: grid;
+            }
+            
+            .submit-row {
+                grid-column: 1 / 3;
+                text-align: center;
+            }
+            
           
+        
+      
+        
         .content-image {
             
             margin-bottom: 0px; 
@@ -495,3 +529,27 @@ h1, h2 {
         }
           
       }
+     
+    
+    
+
+      @media only screen and  (max-width: 320px){
+        .jumbotron {
+          height: 92vh;
+        } 
+    }
+
+        @media only screen and  (max-width: 415px) and (min-width:413px){
+          .jumbotron {
+            height: 92vh;
+          } 
+        
+        }
+
+        @media only screen and  (min-width: 415px) and (max-width:678px){
+            #h1frontpage {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+      }
+     
