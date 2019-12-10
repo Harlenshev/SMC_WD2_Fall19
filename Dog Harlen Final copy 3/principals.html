@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Forte Dog Rescue</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+</style>
+<header>
+    <!--header starts -->
+    <!---- <div class="logo"><img src="images/apf1.gif"></div>-->
+    <div class="logo">Forte Dog Rescue</div>
+
+
+    <label for="toggler">
+        <img src="images/burgermenu.png">
+    </label>
+    <input type="checkbox" id="toggler">
+
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="principals.html">Donate</a></li>
+                <li><a href="services.html">Blog</a></li>
+
+        </ul>
+    </nav>
+</header>
+<!--header ends -->
+
+
+
+<body>
+    <main>
+        <!--main starts -->
+        <div class="container"></div>
+        <div class="floater-section-container">
+            <div class="floater-section width-lg-100 red">
+                <!--Floater section starts -->
+                   
+                <h1>Donate</h1>
+                
+                <div class="donation-form">
+                <div class="page visible-page">
+
+                    <label for="Email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="Name">Name</label>
+                    <input type="Name" id="Name">
+                    
+
+                    <label for="Address">Address</label>
+                    <input type="Address" id="Address">
+                <div class="submit-row">
+                    <input type="button" value="Next" onclick = "nextPage()">
+
+                     </div>
+                </div>
+                
+                
+
+                      
+
+                    <div class="page">
+                    <label for="Credit Card Number">Credit Card</label>
+                    <input type="Credit Card Number" id="Credit Card Number">
+
+
+
+                    <label>Dollar Amount</label>
+                    <input type="number" id="number" min="1" >
+                    <div class="submit-row">
+                            <input type="button" value="Submit" onclick="popup()">
+                            <input type="button" value="Back" onclick = "previousPage()">
+                            
+                              
+    
+                        </div>
+                </div>
+                    
+                
+
+                </div>
+
+
+
+
+                <!----<div class="content-image"><img src="images/coinapf.png"></div>-->
+
+
+            </div>
+            <!--Floater section ends -->
+        </div>
+        <!--Floater section container ends -->
+    </main>
+    <!--main ends -->
+    
+    <script>   
+       var number = document.getElementById("number");
+       var email = document.getElementById("email");
+       var page1 = document.getElementsByClassName("page")[0];
+       var page2 = document.getElementsByClassName("page")[1];
+
+         function nextPage(){
+            page1.classList.remove("visible-page")
+            page2.classList.add("visible-page")
+
+         }
+
+         function previousPage(){
+            page2.classList.remove("visible-page")
+            page1.classList.add("visible-page")
+
+         }
+
+       function popup(){ 
+           if  (number.value.length>0 && email.value.length>0)
+                alert("Thanks for the Donation!");
+            else 
+                alert("Fill to Donate!");
+
+       }
+
+
+
+      </script>
+
+</body>
+
+</html>
