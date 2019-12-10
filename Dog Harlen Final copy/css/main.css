@@ -1,0 +1,555 @@
+@import "colors.css";  
+@import url(layout.css);
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+
+/*.bg {
+    background-image: url("../images/dog3.png");
+    opacity: .5;
+    width: 100%;
+    height: 200px;
+}*/
+
+
+
+
+
+
+
+.jumbotron {
+     height: 74vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.jumbotron h1 {
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+    /*margin-top: -20px;*/
+    
+}
+
+.jumbotron p {
+          padding-bottom: 45px;
+          text-shadow: 0 0 4px rgb(255, 255, 255);
+}
+
+* {
+    text-shadow: 0 0 4px rgb(255, 255, 255);
+}
+
+h1 {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0);
+}
+
+
+.donation-form .page{
+    display: grid; 
+    grid-template-columns: 200px 200px;
+    grid-gap: 17px 17px;
+    width: 437px;
+    margin: auto;
+    font-size: 17px;
+    padding-top: 49px;
+}
+
+.donation-form .page {
+    display: none;
+}
+
+.donation-form .visible-page {
+    display: grid;
+}
+
+.submit-row {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+.image-gallery{
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-gap: 2px 2px;
+    
+}
+
+.image-gallery span { 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+    font-size: 1.0em;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 3px;
+    padding: 2px;
+    
+}
+
+.image-gallery div {
+    text-align: center;
+}
+
+
+
+.logo img{
+max-width: 100px;
+}
+.logo {
+    margin: 0px auto; 
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.404);
+ animation: shadowanimation 10s infinite;
+  
+}
+@keyframes shadowanimation{
+    50%{
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    }
+}
+
+img[alt="menu"] {
+    background-color: rgba(255,255,255,0);
+    transition: background-color 0.25s;
+}
+img[alt="menu"]:hover{
+    background-color: rgba(255, 255, 255, 1); 
+    border-radius: 5px;
+
+}
+
+.textlogo {
+    text-align: center;
+}
+
+/*.content{
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}*/
+
+/*.content h1 {
+    grid-column-start: 1;
+    grid-column-end: 3
+}*/
+.row::after {
+    content: ""; clear: both; display: table; 
+}
+.row > * {
+    display: block; width: 45%; 
+    float: right; 
+   
+    margin: 0;
+}
+.content-image {
+   /* max-width: 100px;*/
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+body {
+ 
+    margin: 0px;
+    
+    font-family: 'IBM Plex Sans', sans-serif;
+
+
+   
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header input#toggler {
+    display: none;
+}
+h1 {
+    vertical-align: middle;
+    font-family: 'IBM Plex Sans', sans-serif;
+   
+
+}
+
+header label {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+@media screen and (min-width: 750px){
+    header label  {
+        display: none;
+    }
+    .logo{
+       
+        text-align: left; 
+    }
+    
+    .content p {
+        font-size: 1.25em;
+    }
+
+    
+
+   
+    
+    header nav {
+        display: inline-block;
+        text-align: center;
+        position: static;
+        background:  0 !important;
+    }
+    header nav li {
+        display: inline-block;
+        background: transparent;
+    }
+    .content-image img {
+        transform: scale(1.25);
+
+
+    }
+    
+}
+
+
+nav {
+    padding: 0px 0px;
+    position: absolute;
+    left: -250px;
+    top: 80px;
+    background-color:whitesmoke;
+    border-radius: 20px;
+    transition: left 0.25s;
+}
+
+input#toggler:checked + nav{
+    left: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    border: 1px solid #faa657;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  
+}
+nav li:hover {
+    /*background-color: rgb(116, 85, 46);*/
+  
+}
+nav li:first-child {
+    /*margin-top: 0px;*/
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family:'IBM Plex Sans', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    
+    
+}
+ 
+nav ul a:hover {
+    color: rgb(0, 0, 0); 
+}
+
+.content-image img {
+    height: 200px;
+}
+/*---------------- Center CSS for All Pages-------------------*/
+
+/* css for body covers background color and font size */ 
+body {
+  /*background: #019722c0;*/
+ /* background: repeating-linear-gradient(to right, #019722 0,  #019722 50px,  green 50px);*/
+  font-size: 90%;
+  padding: 20px;
+  line-height: 35px;
+ background-color: whitesmoke;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+
+}
+
+/* css for main*/ 
+main {
+  /*position: relative;*/
+  background: rgba(255, 255, 255, 0);
+  /*width: 60%;*/
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  overflow: hidden;
+  /*height: 600px;*/
+}
+
+/* css for floater section having image and text */ 
+main .floater-section-container {
+    /*height: 88%;*/
+    width: 90%;
+    right: 1%;
+    /*top: 6%;
+    overflow: hidden;
+    position: relative;*/
+    margin: 0 auto;
+}
+
+main .floater-section {
+    background: rgba(0, 0, 0, 0);
+    color: black;
+    width: 100%;
+    /*position: absolute;*/
+    top: 0;
+    left: 0%;
+    /*height: 100%;
+    overflow: auto;*/
+    right: 0;
+    bottom: 0;
+}
+
+/* css for h1 and h2 heading tags */
+h1, h2 {
+    margin-bottom: 60px;
+    text-align: center;
+    color: rgb(226, 159, 81);
+    
+}
+
+/* media query work on mobile view */ 
+@media only screen and (max-width: 750px)
+{
+	/* main css fixed for mobile view to max 300px */
+	main{
+		/*max-height: 300px;*/
+    }
+    .jumbotron {
+
+        /*height: 92vh;*/
+    }
+
+}
+@media (min-width: 800px){
+    main {
+        width: 80%;
+    }
+}
+
+#dog1, #dog2, #dog3, #dog4, #dog5, #dog6 {
+    background-image: url("../images/dog3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 283px;
+    /*background-size: 282px 283px;*/
+    background-size: cover;
+    background-position: center;
+   
+      }
+       #dog2 {
+        background-image: url("../images/dog4.jpg");
+        
+       }
+       
+       #dog3 {
+        background-image: url("../images/dog8.png");
+        
+       }
+
+     #dog4 {
+     background-image: url("../images/dog11.jpg");
+     
+    }
+     
+    #dog5 {
+        background-image: url("../images/dog13.jpg");
+        
+       }
+   
+   
+   
+    #dog6 {
+        background-image: url("../images/dog12.jpg");
+        
+       }
+
+
+
+      span {
+        margin: 5px;
+      }
+
+      @media only screen and  (min-width: 750px) and (max-width:980px){
+            #h1frontpage {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+      }
+     
+     
+      /* Iphone screen */
+      @media only screen and  (max-width: 400px){
+         
+        #fronttext {
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 5px; 
+            box-sizing: border-box;
+        }
+
+        .donation-form .page{
+            display: grid; 
+            grid-template-columns: 140px 170px;
+            grid-gap: 27px 39px;
+            width: 437px;
+            margin: auto;
+            font-size: 17px;
+            padding-top: 49px;
+        }
+
+            .donation-form .page {
+                display: none;
+            }
+            
+            .donation-form .visible-page {
+                display: grid;
+            }
+            
+            .submit-row {
+                grid-column: 1 / 3;
+                text-align: center;
+            }
+            
+          
+        
+      
+        
+        .content-image {
+            
+            margin-bottom: 0px; 
+        }
+       
+        .content-image img {
+            height: 300px;
+        }
+
+
+        .content {
+             
+            padding-left: 0;
+            padding-right: 0;
+
+        }
+       
+       
+        .jumbotron  {
+        width: 100%;
+        
+        margin-top: 100px;
+        /*width: 95vw;
+        margin-left: 2.5vw;*/
+
+        
+    } 
+
+    
+    main .floater-section {
+        
+        position: absolute;
+         left: 0px;
+        
+    }
+
+    #h1frontpage, div.content h1 {
+           margin-bottom: 0;
+    }
+    h1 {
+        margin-top: 60px;
+    }
+    #fronttext {
+        line-height: 25px;
+    }
+
+
+      }
+    
+      .buttoncss {
+      border: 1px solid orange;
+      padding: 8px;
+      border-radius: 10px;
+      background-color: whitesmoke;
+      }
+
+      @media only screen and  (min-width: 750px){
+          nav li{
+              border: none;
+           
+          }
+           nav {
+               position: absolute !important; 
+               left:0px;
+               top:0px;
+               right: 0px;
+           }
+
+          body {
+
+            padding-top: 0px;
+              
+          }
+          div.logo{
+            display: inline-block;
+          }
+          h1 {
+              margin-top: 100px;
+          }
+
+          #h1frontpage{
+              margin-top: 200px;
+          }
+        .buttoncss {
+            
+            margin-top: 100px;
+        }
+          
+      }
+     
+    
+    
+
+      @media only screen and  (max-width: 320px){
+        .jumbotron {
+          height: 92vh;
+        } 
+    }
+
+        @media only screen and  (max-width: 415px) and (min-width:413px){
+          .jumbotron {
+            height: 92vh;
+          } 
+        
+        }
+
+        @media only screen and  (min-width: 415px) and (max-width:678px){
+            #h1frontpage {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+      }
+     
